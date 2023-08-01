@@ -19,7 +19,7 @@
 ```java
     public class CodeBuoi2 {
         public static void main(String[] args) {
-            System.out.println("Hello World!);
+            System.out.println("Hello World!");
         }
     }
 ```
@@ -67,7 +67,7 @@
     float f = (float) 10;
 ```
 
-3. Nhập dũ liệu
+3. Nhập dữ liệu
 
 - Sử dụng Scanner có sẵn trong Java, khai báo 1 đối tượng Scanner để nhập dữ liệu cho các biến
 
@@ -95,7 +95,8 @@
 
 ## Các phép toán, toán tử trong Java
 
-- Các phép toán toán học: + - \* / %
+- Các phép toán toán học: + - \* / % 
+- Toán tử gán: = += -= *= /=
 - Các toán tử logic: && || !
 - Các toán tử so sánh: > < == != >= <=
 - Toán tử 3 ngôi: ?:
