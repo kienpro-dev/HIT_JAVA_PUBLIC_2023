@@ -37,18 +37,45 @@ for (int prime : primes) {
 1. Hàm
 Hàm trong Java là một khối mã thực hiện một nhiệm vụ cụ thể và có thể được gọi từ bất kỳ đâu trong chương trình. Dưới đây là một ví dụ về hàm tính giai thừa:
 
+- Hàm tính giai thừa
+
 ```java
-    // Hàm tính giai thừa 
-       int factorial(int n) { 
-       if (n == 0 || n == 1) { 
-       return 1; 
-} else { 
-       return n * factorial(n - 1); 
-} 
+      int factorial(int n) { 
+      	if (n == 0 || n == 1) { 
+      		return 1; 
+       } else { 
+     		return n * factorial(n - 1); 
        } 
+      } 
        // Gọi hàm và lấy kết quả 
-       int result = factorial(5); // Kết quả: 120
+      int result = factorial(5); // Kết quả: 120
 ```
+
+- Hàm kiểm tra số nguyên tố
+
+``` java
+	// Hàm kiểm tra số nguyên tố
+       boolean isPrime(int n) {
+    		if (n <= 1) {
+        		return false;
+    		}
+    		for (int i = 2; i <= Math.sqrt(n); i++) {
+        		if (n % i == 0) {
+            		return false;
+        		}
+   		}
+   		return true;
+       }
+
+// Gọi hàm và lấy kết quả
+boolean primeCheck = isPrime(17); // Kết quả: true
+```
+
+• Sự khác biệt giữa hàm có static và không có static:
+o Hàm không có static
+• Các hàm này được gọi trên các đối tượng của lớp, nghĩa là cần tạo một đối tượng của lớp đó trước khi gọi hàm.
+o Hàm có static
+• Các hàm này được gọi trực tiếp từ lớp mà không cần tạo đối tượng của lớp.
 
 2. Hằng
 Hằng là một biến không thay đổi giá trị sau khi được gán, thường được khai báo với từ khóa final:
@@ -61,7 +88,7 @@ Hằng là một biến không thay đổi giá trị sau khi được gán, th�
     } 
        
        // Sử dụng hằng số trong chương trình 
-int secondsInADay = TimeConstants.SECONDS_IN_MINUTE * TimeConstants.MINUTES_IN_HOUR * TimeConstants.HOURS_IN_DAY; 
+	 int secondsInADay = TimeConstants.SECONDS_IN_MINUTE * 	TimeConstants.MINUTES_IN_HOUR * TimeConstants.HOURS_IN_DAY; 
        System.out.println("Số giây trong một ngày: " + secondsInADay);
 ```
 
@@ -178,19 +205,19 @@ double ePowerX = Math.exp(value);
        
        // Thay thế và chuyển đổi chuỗi 
        String originalText = "I like apples and apples are tasty."; 
-String replacedText = originalText.replace("apples", "bananas"); String uppercaseText = originalText.toUpperCase(); 
-String lowercaseText = originalText.toLowerCase();
+	 String replacedText = originalText.replace("apples", "bananas"); 	 String uppercaseText = originalText.toUpperCase(); 
+	 String lowercaseText = originalText.toLowerCase();
 
-// Kiểm tra chuỗi có chứa một ký tự/chuỗi con hay không 
-String message = "Hello, Java programming."; 
-boolean startsWithHello = message.startsWith("Hello"); 
-// Kết quả: true 
+	 // Kiểm tra chuỗi có chứa một ký tự/chuỗi con hay không 
+	 String message = "Hello, Java programming."; 
+	 boolean startsWithHello = message.startsWith("Hello"); 
+	 // Kết quả: true 
 
-boolean endsWithProgramming = message.endsWith("programming."); 
-// Kết quả: false 
+	 boolean endsWithProgramming = message.endsWith("programming."); 
+	 // Kết quả: false 
 
-boolean containsJava = message.contains("Java"); 
-// Kết quả: true
+	 boolean containsJava = message.contains("Java"); 
+	 // Kết quả: true
 
 ```
 
