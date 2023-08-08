@@ -22,13 +22,13 @@
        primes[2] = 13; // Giá trị 5 được thay đổi thành 13 
        
        // Duyệt mảng bằng vòng lặp for 
-for (int i = 0; i < primes.length; i++) { 
-       System.out.println(primes[i]); 
+	for (int i = 0; i < primes.length; i++) { 
+       	System.out.println(primes[i]); 
        } 
        
-// Duyệt mảng bằng vòng lặp for-each 
-for (int prime : primes) { 
-       System.out.println(prime); 
+	// Duyệt mảng bằng vòng lặp for-each 
+	for (int prime : primes) { 
+      	 System.out.println(prime); 
        }
 ```
 
@@ -67,15 +67,15 @@ Hàm trong Java là một khối mã thực hiện một nhiệm vụ cụ thể
    		return true;
        }
 
-// Gọi hàm và lấy kết quả
-boolean primeCheck = isPrime(17); // Kết quả: true
+	// Gọi hàm và lấy kết quả
+	boolean primeCheck = isPrime(17); // Kết quả: true
 ```
 
-• Sự khác biệt giữa hàm có static và không có static:
-o Hàm không có static
-• Các hàm này được gọi trên các đối tượng của lớp, nghĩa là cần tạo một đối tượng của lớp đó trước khi gọi hàm.
-o Hàm có static
-• Các hàm này được gọi trực tiếp từ lớp mà không cần tạo đối tượng của lớp.
+- Sự khác biệt giữa hàm có static và không có static:
+       - Hàm không có static
+- Các hàm này được gọi trên các đối tượng của lớp, nghĩa là cần tạo một đối tượng của lớp đó trước khi gọi hàm.
+       - Hàm có static
+       - Các hàm này được gọi trực tiếp từ lớp mà không cần tạo đối tượng của lớp.
 
 2. Hằng
 Hằng là một biến không thay đổi giá trị sau khi được gán, thường được khai báo với từ khóa final:
@@ -205,7 +205,8 @@ double ePowerX = Math.exp(value);
        
        // Thay thế và chuyển đổi chuỗi 
        String originalText = "I like apples and apples are tasty."; 
-	 String replacedText = originalText.replace("apples", "bananas"); 	 String uppercaseText = originalText.toUpperCase(); 
+	 String replacedText = originalText.replace("apples", "bananas"); 
+	 String uppercaseText = originalText.toUpperCase(); 
 	 String lowercaseText = originalText.toLowerCase();
 
 	 // Kiểm tra chuỗi có chứa một ký tự/chuỗi con hay không 
