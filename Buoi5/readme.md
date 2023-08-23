@@ -29,11 +29,14 @@ public class MathUtils {
         MathUtils utils2 = new MathUtils();
         System.out.println(MathUtils.counter);    // In ra số lượng thể hiện đã được tạo
     }
-}```
+}
+
+```
 
 ## 2. Con trỏ ‘this’
 
 - Trong Java, từ khóa "this" tham chiếu đến thể hiện của lớp đang thực thi, cho phép truy cập vào các thành viên (biến và phương thức) của thể hiện đó.
+
 
 ```java
 public class Person {
