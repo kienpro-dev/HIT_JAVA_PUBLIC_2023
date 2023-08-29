@@ -179,3 +179,6 @@
 - Lưu ý:
   - Để ghi đè phương thức lớp cha thì phương thức lớp con cần có phạm vi truy cập bằng hoặc rộng hơn phương thức lớp cha: private -> default -> protected -> public
   - Phương thức static và final không thể bị ghi đè
+
+- Tìm hiểu thêm:
+    - [Up-casting_và_down-casting](https://codelearn.io/learning/lap-trinh-huong-doi-tuong-trong-java/865161)
