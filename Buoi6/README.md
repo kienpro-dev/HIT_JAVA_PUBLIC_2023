@@ -174,7 +174,7 @@
 
 - Ví dụ thực tế về ghi đè phương thức trong các ngân hàng:
 
-![alt text](https://viettuts.vn/images/java/ghi-de-phuong-thuc-trong-java1.png)
+![alt text](https://www.javatpoint.com/images/core/bankinheritance.png)
 
 - Lưu ý:
   - Để ghi đè phương thức lớp cha thì phương thức lớp con cần có phạm vi truy cập bằng hoặc rộng hơn phương thức lớp cha: private -> default -> protected -> public
