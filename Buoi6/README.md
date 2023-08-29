@@ -91,6 +91,7 @@
 ```
 
 ## Kế thừa trong Java OOP (Inheritance)
+
 - Kế thừa trong OOP là thừa hưởng lại thuộc tính và phương thức của 1 lớp
 - Lớp cho kế thừa gọi là lớp cha, lớp được kế thừa gọi là lớp con, lớp con sẽ thừa hưởng các thuộc tính và phương thức của lớp cha mà vẫn phải đảm bảo tính đóng gói (Encapsulation)
 
@@ -98,18 +99,16 @@
 
 ![alt text](https://codelearn.io/Media/Default/Users/TuanLQ7/Java_OOP/inheritance6.png)
 
-- Mục đích sử dụng kế thừa: 
-    - Tái sử dụng lại code
-    - Dễ dàng chỉnh sửa, gỡ lỗi
-    - Tăng khả năng mở rộng code
-    - ...
-
-- Lưu ý: Java không hỗ trợ đa kế thừa, mỗi class chỉ có 1 class cha duy nhất 
+- Mục đích sử dụng kế thừa:
+  - Tái sử dụng lại code
+  - Dễ dàng chỉnh sửa, gỡ lỗi
+  - Tăng khả năng mở rộng code
+  - ...
 
 ```java
     class Person{
         private String name;
-        
+
         public Person(String name) {
             this.name = name;
         }
@@ -119,7 +118,7 @@
         public void setName(String name) {
             this.name = name;
         }
-    
+
     }
 
     // Lớp Student kế thừa lớp Person thông qua từ khóa extends
@@ -128,7 +127,7 @@
 
         // Khi khai báo constructor lớp con cần truyền đầy đủ tham số cả cha lẫn con
         public Student(String name, double gpa) {
-            // thông qua từ khóa super gọi đến constructor lớp cha 
+            // thông qua từ khóa super gọi đến constructor lớp cha
             super(name);
             this.gpa = gpa;
         }
@@ -140,3 +139,43 @@
         }
     }
 ```
+
+- Lưu ý: Java không hỗ trợ đa kế thừa, mỗi class chỉ có 1 class cha duy nhất
+
+![alt text](https://viettuts.vn/images/java/cac-kieu-ke-thua.jpg)
+
+## Ghi đè phương thức (override)
+
+- Ghi đè phương thức trong java xảy ra nếu lớp con có phương thức giống lớp cha.
+- Sử dụng để cung cấp 1 phương thức được cài đặt khác đối với mỗi lớp con khác nhau của lớp cha.
+
+```java
+    class Person{
+        public void display() {
+            System.out.println("This is Person");
+        }
+    }
+
+    class Student extends Person{
+        @Override
+        public void display() {
+            System.out.println("This is Student");
+        }
+    }
+
+    class Test {
+        public static void main(String[] args) {
+            Student s = new Student();
+            s.display();
+            // This is Student
+        }
+    }
+```
+
+- Ví dụ thực tế về ghi đè phương thức trong các ngân hàng:
+
+![alt text](https://viettuts.vn/images/java/ghi-de-phuong-thuc-trong-java1.png)
+
+- Lưu ý:
+  - Để ghi đè phương thức lớp cha thì phương thức lớp con cần có phạm vi truy cập bằng hoặc rộng hơn phương thức lớp cha: private -> default -> protected -> public
+  - Phương thức static và final không thể bị ghi đè
