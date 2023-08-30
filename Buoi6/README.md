@@ -107,7 +107,8 @@
 
 ```java
     class Person{
-        private String name;
+        // private String name;
+        protected String name;
 
         public Person(String name) {
             this.name = name;
