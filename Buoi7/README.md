@@ -68,24 +68,24 @@ class Dog extends Animal {
 ```
 
 • So sánh Interface và Abstract Class: 
-• Đa kế thừa: Interface cho phép một lớp triển khai nhiều giao diện, trong khi một lớp chỉ có thể kế thừa từ một lớp trừu tượng. Điều này cho phép tính đa kế thừa (multiple inheritance) trong trường hợp của giao diện. 
-• Triển khai: Giao diện chỉ định các phương thức trừu tượng mà lớp con phải triển khai, trong khi lớp trừu tượng có thể cung cấp một phần triển khai cơ bản của các phương thức. 
-• Sự linh hoạt: Lớp trừu tượng cung cấp sự linh hoạt hơn vì bạn có thể triển khai phần nào đó của một phương thức và để phần khác là trừu tượng. Giao diện không cung cấp tính năng này. 
-• Mục đích: Sử dụng giao diện khi bạn muốn định nghĩa một hợp đồng giao tiếp cho các lớp không có sự kế thừa chung. Sử dụng lớp trừu tượng khi bạn muốn chia sẻ mã nguồn chung cho các lớp con và định nghĩa các phương thức cơ bản.
+       • Đa kế thừa: Interface cho phép một lớp triển khai nhiều giao diện, trong khi một lớp chỉ có thể kế thừa từ một lớp trừu tượng. Điều này cho phép tính đa kế thừa (multiple inheritance) trong trường hợp của giao diện. 
+       • Triển khai: Giao diện chỉ định các phương thức trừu tượng mà lớp con phải triển khai, trong khi lớp trừu tượng có thể cung cấp một phần triển khai cơ bản của các phương thức. 
+       • Sự linh hoạt: Lớp trừu tượng cung cấp sự linh hoạt hơn vì bạn có thể triển khai phần nào đó của một phương thức và để phần khác là trừu tượng. Giao diện không cung cấp tính năng này. 
+       • Mục đích: Sử dụng giao diện khi bạn muốn định nghĩa một hợp đồng giao tiếp cho các lớp không có sự kế thừa chung. Sử dụng lớp trừu tượng khi bạn muốn chia sẻ mã nguồn chung cho các lớp con và định nghĩa các phương thức cơ bản.
 
 
 ## Tính trừu tượng và đa hình trong Java OOP
 
-![alt text]( https://freetuts.net/tinh-truu-tuong-abstraction-trong-java-1138.html)
-![alt text]( https://viettuts.vn/java/tinh-da-hinh-trong-java)
-
+Tài liệu đọc thêm:
+- [Trừu tượng](https://freetuts.net/tinh-truu-tuong-abstraction-trong-java-1138.html)
+- [Đa hình](https://viettuts.vn/java/tinh-da-hinh-trong-java)
 
 1.Trừu tượng (Abstraction) 
 - Tính trừu tượng là một khái niệm trong lập trình hướng đối tượng (OOP) cho phép bạn ẩn đi các chi tiết phức tạp của một đối tượng và chỉ tập trung vào các tính chất hoặc hành vi quan trọng. Mục tiêu chính của tính trừu tượng là đơn giản hóa việc sử dụng đối tượng và giảm độ phức tạp của mã nguồn.
 
 Các cách để thực hiện tính trừu tượng bao gồm:
-• Giao diện (Interface): Một giao diện là một tập hợp các phương thức mà các lớp khác phải triển khai. Nó chỉ định "các giao diện" của một đối tượng mà không quan tâm đến cách nó được triển khai. Điều này giúp loại bỏ các chi tiết cụ thể của một đối tượng và chỉ quan tâm đến cách sử dụng nó.
-• Lớp trừu tượng (Abstract class): Một lớp trừu tượng là một lớp mà bạn không thể tạo một đối tượng cụ thể từ nó. Nó thường chứa một số phương thức trừu tượng (có thể hoặc không được triển khai trong các lớp con) và các thuộc tính chung cho các lớp con. Lớp trừu tượng cung cấp một cơ chế để định nghĩa các phương thức cơ bản mà các lớp con cần triển khai.
+	• Giao diện (Interface): Một giao diện là một tập hợp các phương thức mà các lớp khác phải triển khai. Nó chỉ định "các giao diện" của một đối tượng mà không quan tâm đến cách nó được triển khai. Điều này giúp loại bỏ các chi tiết cụ thể của một đối tượng và chỉ quan tâm đến cách sử dụng nó.
+	• Lớp trừu tượng (Abstract class): Một lớp trừu tượng là một lớp mà bạn không thể tạo một đối tượng cụ thể từ nó. Nó thường chứa một số phương thức trừu tượng (có thể hoặc không được triển khai trong các lớp con) và các thuộc tính chung cho các lớp con. Lớp trừu tượng cung cấp một cơ chế để định nghĩa các phương thức cơ bản mà các lớp con cần triển khai.
 
 
 
