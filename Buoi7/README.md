@@ -5,10 +5,13 @@
 Interface:
 1. Định nghĩa: Giao diện (Interface) là một khái niệm trong lập trình hướng đối tượng (OOP) cho phép bạn định nghĩa một tập hợp các phương thức trừu tượng (abstract methods) mà các lớp khác phải triển khai. Nó chỉ định giao diện (contracts) mà các lớp khác phải tuân theo, nhưng không cung cấp bất kỳ triển khai cụ thể nào.
 2. Sử dụng: 
-• Giao diện (Interface) là một khái niệm trong Java cho phép định nghĩa các phương thức mà các lớp khác phải triển khai. 
-• Giao diện chỉ định giao tiếp mà các lớp con phải tuân theo, nhưng không cung cấp triển khai cụ thể. 
-• Một lớp có thể triển khai nhiều giao diện, cho phép đa kế thừa (multiple inheritance) cho các phương thức giao diện. 
-• Ví dụ: Giao diện Runnable định nghĩa phương thức run(), và các lớp khác (ví dụ: Thread) triển khai phương thức này theo cách riêng.
+       • Giao diện (Interface) là một khái niệm trong Java cho phép định nghĩa các phương thức mà các lớp khác phải triển khai. 
+       
+       • Giao diện chỉ định giao tiếp mà các lớp con phải tuân theo, nhưng không cung cấp triển khai cụ thể. 	
+       
+       • Một lớp có thể triển khai nhiều giao diện, cho phép đa kế thừa (multiple inheritance) cho các phương thức giao diện. 
+
+       • Ví dụ: Giao diện Runnable định nghĩa phương thức run(), và các lớp khác (ví dụ: Thread) triển khai phương thức này theo cách riêng.
 
 ```java
 // Định nghĩa một giao diện Speakable
