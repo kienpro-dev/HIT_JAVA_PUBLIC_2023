@@ -65,7 +65,7 @@ class Dog extends Animal {
         System.out.println(name + " says Woof!");
     }
 }
-       ```
+```
 
 • So sánh Interface và Abstract Class: 
 • Đa kế thừa: Interface cho phép một lớp triển khai nhiều giao diện, trong khi một lớp chỉ có thể kế thừa từ một lớp trừu tượng. Điều này cho phép tính đa kế thừa (multiple inheritance) trong trường hợp của giao diện. 
