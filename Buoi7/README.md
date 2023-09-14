@@ -127,7 +127,7 @@ public class Cat implements Speakable {
     }
 }
 
-public class Main {
+public class KiemTra.Bai2.Main {
     public static void main(String[] args) {
         Speakable dog = new Dog();
         Speakable cat = new Cat();
@@ -184,7 +184,7 @@ class Cat extends Animal {
     }
 }
 
-public class Main {
+public class KiemTra.Bai2.Main {
     public static void main(String[] args) {
         Animal dog = new Dog("Buddy");
         Animal cat = new Cat("Whiskers");

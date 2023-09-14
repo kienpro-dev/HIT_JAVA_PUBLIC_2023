@@ -1,3 +1,5 @@
+package KiemTra.Bai2;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -59,6 +61,8 @@ public class Classroom {
     }
 
     public void output() {
+        System.out.println("Class ID: " + classId);
+        System.out.println("Number of student: " + numberOfStudent);
         for(Student s : listStudents) {
             s.output();
         }

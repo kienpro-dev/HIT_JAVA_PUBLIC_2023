@@ -1,3 +1,5 @@
+package KiemTra.Bai2;
+
 import java.util.Scanner;
 
 public class Person {

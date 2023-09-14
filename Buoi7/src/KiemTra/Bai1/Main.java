@@ -1,6 +1,8 @@
+package KiemTra.Bai1;
+
 import java.util.Scanner;
 
-public class Bai1 {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
@@ -21,7 +23,7 @@ public class Bai1 {
                     j++;
                     i++;
                 }
-                if(check == false) {
+                if(!check) {
                     n *= -1;
                 }
                 res += n;

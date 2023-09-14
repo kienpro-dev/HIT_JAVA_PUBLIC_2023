@@ -1,3 +1,5 @@
+package KiemTra.Bai2;
+
 import java.util.Scanner;
 
 public class Student extends Person {
@@ -61,9 +63,9 @@ public class Student extends Person {
     @Override
     public void output() {
         super.output(); // output thuoc tinh person
-        // output thuoc tinh Student
+        // output thuoc tinh KiemTra.Bai2.Student
         System.out.printf("%-5d %-5.2f", id, gpa);
-        // output thuoc tinh ket tap Address
+        // output thuoc tinh ket tap KiemTra.Bai2.Address
         this.address.output();
         // xuong dong voi moi doi tuong
         System.out.println();
