@@ -196,3 +196,4 @@ public class Main {
 ```
 
 Trong ví dụ này, Animal là lớp trừu tượng với một phương thức trừu tượng speak. Dog và Cat là các lớp con kế thừa từ Animal và triển khai phương thức speak theo cách của riêng họ. Trong hàm main, chúng ta tạo đối tượng Dog và Cat thông qua lớp cơ sở Animal, và sau đó gọi phương thức speak để in ra tiếng kêu của chúng.
+
